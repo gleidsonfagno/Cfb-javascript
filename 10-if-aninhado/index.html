@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>IF aninhado</title>
+</head>
+<body>
+        <script>
+          var nota = 100;
+          var res;
+          // aprovado com louvor  >95
+          // reprovado com louvor < 20
+          // Aprovado -> >=60
+          // recuperacao >= 40 && <60
+          // reprovado < 400
+
+          if(nota >= 60){
+               res = "aprovado "
+               if(nota >= 95){
+                    if(nota >= 100){
+                         res += "com exelencia"
+                    }else{
+                         res +=  " com louvor " + nota;
+                    }
+               }else{
+                    res += " com nota nomal"
+               }
+
+          } else if( ( nota >= 40)&&(nota < 60) ) {
+               res = "Recuperaçao"
+
+          }else {
+               res = "reprovado "
+               if(nota >= 20){
+               res += " por nota baixa"
+
+               }else{
+                    res += "com louvor " + nota
+               }
+          }
+          
+          
+          document.write(res)
+          
+        </script>
+</body>
+</html>

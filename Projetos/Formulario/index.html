@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <script src="https://kit.fontawesome.com/db349e7220.js" crossorigin="anonymous"></script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tela de login</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="container">
+          <div class="card">
+               <h1>Entrar</h1>
+
+               <div id="msgError"></div>
+
+               <div class="label-float">
+                    <input type="text" id="usuario" placeholder="" required>
+                    <label id="userLabel" for="usuario">Usuario</label>
+               </div>
+
+               <div class="label-float">
+                    <input type="password" id="senha" placeholder="" required>
+                    <label id="senhaLabel" for="senha">Senha</label>
+                    <!-- <i class="fa-sharp fa-regular fa-eye-slash"></i> -->
+                    <i class="fa-solid fa-eye"></i>
+               </div>
+
+               <div class="justify-center">
+                    <button onclick="entrar()">Entrar</button>
+               </div>
+
+               <div class="justify-center">
+                    <hr>
+               </div>
+
+               <p>Não tem uma conta ?
+                    <a href="tela-de-cadastro.html">Cadastre-se</a>
+               </p>
+          </div>
+     </div>
+     <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos</title>
+        <style>
+                body{
+                        background-color: rgba(137, 43, 226, 0.4);
+                }
+                #dv1{
+                        width: 200px;
+                        height: 200px;
+                        border: 1px solid #000;
+                        margin: 2em auto 2rem;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        border-radius: 999px;
+                }
+                button{
+                        display: grid;
+                        place-content: center;
+                        margin: auto;
+                }
+        </style>
+
+</head>
+<body onload="ola()">
+        <div id="dv1" onmouseover="mudarCor(this,'#fff')" onmouseout="mudarCor(this,'#ccc')"></div>
+
+        <button  onmouseover="mudarPos(this)">Clique em mim</button>
+        <!-- onclick="alert('javascript')" -->
+        <script>
+                function mudarCor(obj, cor){
+                        obj.style.backgroundColor = cor;
+                        // var div = document.getElementById("dv1")
+                        // div.style.backgroundColor = "#000"
+                }
+                function mudarPos(obj){
+                        obj.style.position ="absolute";
+                        obj.style.left = Math.random()*500+"px";
+                        obj.style.top = Math.random()*500+"px";
+                }
+
+                function ola(){
+                        var data = new Date();
+                        var hora = data.getHours();
+                        var txt = ""
+                        if(hora < 12){
+                                txt = "Bom dia"
+                        }else if(hora < 18){
+                                txt = "Boa tarde"
+                        }else{
+                                txt = "Boa noite"
+                        }
+                        alert("Ala, "+txt);
+                }
+        </script>
+</body>
+</html>

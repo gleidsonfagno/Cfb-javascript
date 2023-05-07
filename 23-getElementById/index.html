@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>getElementById </title>
+        <script>
+        //       document.getElementById("text").style.color = "red"
+                
+        </script>
+</head>
+<body>
+        <div id="c1">Javascript</div>
+        <div id="c2">Javascript</div>
+        <div id="c3">Javascript</div>
+        <div id="c4">Javascript</div>
+
+        <p id="texto">Javascript</p>
+        <div id="caixa"></div>
+
+        <script>
+                var c1 = document.getElementById("c1")
+                var c2 = document.getElementById("c2")
+                var c3 = document.getElementById("c3")
+                var c4 = document.getElementById("c4")
+
+                const arr = [c1, c2, c3, c4]
+
+                arr.map((e)=>{
+                        e.innerHTML = "gleidson vc ta aprendendo continue"
+                        console.log(e)
+                })
+
+
+                var txt =document.getElementById("texto")
+                txt.style.color = "red"
+                txt.style.fontSize ="50px"
+
+                var caixa = document.getElementById("caixa")
+                caixa.style.border = "1px solid #000"
+                caixa.style.width = "100%"
+                caixa.style.height = "300px"
+                caixa.style.backgroundColor  = "#aaa"
+                // caixa.style.display = %"none"
+        </script>
+</body>
+</html>

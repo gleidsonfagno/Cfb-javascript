@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>manipular elementos / DATA e Hora</title>
+
+</head>
+<body>
+        <script>
+                
+                var dt = new Date();
+
+                var ndt = new Date(2023,02,01,20,24,22);//dia ano mes minuto segundo milisegundo
+
+                // ndt.setDate(dt.getDate()+2)
+                // ndt.setFullYear(dt.getDate()+2)
+                
+                var semana = ndt.getDay();
+                var dia = dt.getDate();
+                var mes = dt.getMonth();
+                var ano = dt.getFullYear();
+
+                var horas = dt.getHours();
+                var minutos = dt.getMinutes();
+                var segundos = dt.getSeconds();
+
+                var meses = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+                var semanas = new Array("Domingo", "segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sabado")
+
+                document.write(semanas[semana] + "," + dia +"," + meses[mes] + "/" + ano + "<br>")
+
+                document.write(horas + " : " + minutos +" : " + segundos)
+
+
+        </script>
+</body>
+</html>

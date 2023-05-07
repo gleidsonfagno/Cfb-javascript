@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>manipular elementos / QueryselectorAll</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <form name="curso1" id="curso1" action="#" method="post">
+                <label>Nome</label>
+                <input type="text" name="fNome" id="teste" value="Primeiro - 1">
+                <label>Senha</label>
+                <input type="password" name="fSenha" value="123">
+                <input type="submit" name="btEnviar" value="Enviar">
+        </form>
+
+        <script>
+                // apontar para formulario
+                // var fm = document.forms.length; 
+                // retorna o tanto de item formmulario
+                // var fm = document.forms[1].id; 
+                // retorna o tanto de id de um form
+                // var fm = document.forms.item(0).id;
+                //  mesmo do segundo
+                // var fm = document.forms.namedItem("curso1").id; 
+                // mesmo que o anterior
+                // var fm = document.forms.namedItem("curso2").innerHTML
+
+                // apontar elementos do form
+
+                document.write(document.getElementById("curso1").elements[0].value)
+
+                var fm = document.forms[0];
+                var el = fm.elements;
+
+                for(i = 0; i < el.length-1; i++){
+                        el[i].style.background = "#ddd"
+                        el[i].value = "javascript"
+                }
+
+                // document.write(fm)
+        </script>
+        
+</body>
+</html>

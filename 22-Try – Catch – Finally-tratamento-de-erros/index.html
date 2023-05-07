@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>tratamento de erros Try – Catch – Finally </title>
+</head>
+<body>
+        <script>
+                var num //maximo 10
+                try{
+                        num = prompt("digiteum valor nemor ou igual a 10")
+
+                        if(num > 10 ){
+                                throw new Error("valor invalido <strong>O valor deve ser meno ou igual a 10</strong>")
+                        }
+
+                        
+                }catch(erro){
+                        console.log("ERRO: " + erro.message)
+                        // document.write("ERRO: " + erro.message)
+                        num = 10
+                        // console.log("Mensagem de erro: " + erro.message);
+                }finally{
+                        document.write("valor " + num)
+                        // document.write("<br> FIM do tratamento")
+                }
+
+                // try{
+                // alerrt("CFB");
+                // }catch(erro){
+                // document.write("Houve um erro no bloco try<br>");
+                // }finally{
+                // document.write("Comando try finalizado<br>");
+                // }
+        </script>
+</body>
+</ht

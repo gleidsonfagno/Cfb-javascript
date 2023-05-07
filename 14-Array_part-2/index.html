@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Array part2</title>
+</head>
+<body>
+        <script>
+          // push insere no final do array
+          // unshift no comeco do array
+          // pop remove o ultimo elemento do array
+          var mochila = [];
+
+          mochila.push("faca")
+          mochila.push("corda")
+          mochila.push("chave")
+          mochila.push("lanterna")
+
+          // insere no comeco do array
+          mochila.unshift("pedra")
+
+          // mochila.pop();
+          // remove o ultimo elemento
+
+          // mochila.shift();
+          // remove o primeiro elemeto
+
+          mochila.splice(1,1)
+          mochila.splice(1,1)
+          // aparti de indice 2 remove 2 elementos
+
+          document.write(mochila[0]+"<br>");
+          document.write(mochila[1]+"<br>");
+          document.write(mochila[2]+"<br>");
+          document.write(mochila[3]+"<br>");
+          document.write(mochila[4]+"<br>");
+
+
+        </script>
+</body>
+</html>

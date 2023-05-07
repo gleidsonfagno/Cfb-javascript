@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos</title>
+        <style>
+                body{
+                        background-color: rgba(137, 43, 226, 0.4);
+                }
+                #dv1{
+                        width: 200px;
+                        height: 200px;
+                        border: 1px solid #000;
+                        margin: auto;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        border-radius: 999px;
+                        position: absolute;
+                }
+                button{
+                        display: grid;
+                        place-content: center;
+                        margin: auto;
+                }
+        </style>
+
+</head>
+<body>
+        <div id="dv1" onclick="msg()"></div>
+
+        <script>
+                var div = document.getElementById("dv1")
+                function msg(){
+                        // alert("javascript")
+                        div.style.background = "#333"
+                }
+                div.addEventListener("mose", msg)
+
+                // function cor1(){
+                //         div.style.background = "#fff"
+                // }
+                // function cor2(){
+                //         div.style.background = "#30f"
+                // }
+                function cor(obj,cor){
+                        obj.style.background= cor
+                }
+
+                // inicializaçao 
+                function addEventos(){
+                        var obj = document.getElementById("dv1")
+                        div.addEventListener("click",msg)
+                        div.addEventListener("mouseover", function(event){
+                                cor(obj, "#fff")
+                        })
+                        div.addEventListener("mouseout", function(event){
+                                cor(obj, "#340")
+                        })
+                }
+                window.addEventListener("load", addEventos)
+        </script>
+        
+</body>
+</html>

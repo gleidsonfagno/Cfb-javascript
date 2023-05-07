@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>manipular elementos / QueryselectorAll</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <h1 class="titulo">QueryselectorAll</h1>
+        <p class="titulo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur obcaecati mollitia consectetur beatae</p>
+        <h2 class="titulo">javascript</h2>
+        <div class="titulo" >
+                <p>ola mundo</p>
+                <p>ola mundo</p>
+        </div>
+        <script>
+                var ps = document.querySelectorAll("p, h1, h2")
+                for(var i = 0; i < ps.length; i++){
+                        document.write(ps[i].innerHTML = "novo texto");
+                        document.write(ps[i].style = "#867")
+                }
+
+                // ps[0].style.color = "red"
+                // ps[1].innerHTML = "NOVO TEXTO"
+        </script>
+</body>
+</html>

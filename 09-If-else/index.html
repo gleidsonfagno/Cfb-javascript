@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> multiplos teste de IF</title>
+</head>
+<body>
+        <script>
+          var nota = 18;
+          var res;
+          // aprovado com louvor  >95
+          // reprovado com louvor < 20
+          // Aprovado -> >=60
+          // recuperacao >= 40 && <60
+          // reprovado < 400
+
+          if(nota >= 95){
+               res =  " aprovado com louvor " + nota;
+          }else if(nota >= 60){
+              res = "aprovado"
+
+          } else if( ( nota >= 40)&&(nota < 60) ) {
+               res = "recuperaçao"
+          }else if(nota >= 20){
+               res = "Reprovado"
+          }else{
+               res = "reprovado com louvor " + nota
+          }
+          
+          
+          document.write(res)
+          
+
+        </script>
+</body>
+</html>

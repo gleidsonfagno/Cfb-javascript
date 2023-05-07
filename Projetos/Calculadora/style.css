@@ -1,0 +1,72 @@
+*{
+     padding: 0;
+     margin: 0;
+     /* border: none; */
+     box-sizing: border-box;
+     font-size: large;
+     font-family: Arial, Helvetica, sans-serif;
+}
+body{
+     background: #c4c4c4;
+}
+.dflex{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.calc{
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-color: rgba(0, 0, 0, 0.4);
+     max-width: 50%;
+     margin: 20px  auto;
+     padding: 20px;
+     border-radius: 9px;
+}
+.div_nome{ 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #f8f8f8;
+     font-size: 28px;
+     font-weight: bold;
+}
+.div_display{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 200px ;
+     border: 1px solid red;
+     background: rgba(16, 88, 2, 0.226);
+}
+.display{
+     border: 1px solid red;
+     width: 200px ;
+     color: #f8f8f8;
+     text-align: right;
+     padding: 5px ;
+
+}
+.div_teclas{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 225px;
+     flex-wrap: wrap;
+}
+.tecla{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #f8f8f8;
+     border: 3px solid #888;
+     padding: 10px;
+     width: 50px;
+}
+.teclaOp{
+     background: #f44;
+     border: 3px solid #800;
+}

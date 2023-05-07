@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Relogio</title>
+     <style>
+          *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          }
+          html{
+               background: #100a1c;
+               background-image:
+               radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+               radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+               background-attachment: fixed;
+          color: #6cacc5;
+          text-align: center;
+          }
+          input{
+               /* padding: 3rem; */
+               font-size: 40px;
+               text-align: center;
+               margin-top: 20px;
+               color: #6cacc5;
+          }
+     </style>
+</head>
+<body onload="Relogio()">
+     <h1>Relogio gleidson fagno</h1>
+     <input type="text" id="rel">
+     <!-- <button onclick="rel()"></button> -->
+
+     <script>
+          function Relogio(){
+               var data = new Date();
+               var hora = data.getHours();
+               var minutos = data.getMinutes();
+               var segundos = data.getSeconds();
+
+
+               // formatar a hora
+               // if(hora < 10){
+               //      hora = "0"+horas
+               // }
+               // if(hora < 10){
+               //      hora = "0"+minutos
+               // }
+               // if(hora < 10){
+               //      hora = "0"+ segundos
+               // }
+     
+               // imprimir hora
+               var horas = `${hora} : ${minutos} : ${segundos}`
+               document.getElementById("rel").value = horas
+
+               var tempo = setInterval(Relogio, 1000)
+          }
+
+
+          addEventListener("load", Relogio())
+     </script>
+</body>
+</html>
